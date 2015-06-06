@@ -1,0 +1,135 @@
+/* http: //meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* -----------------------------------------o Code */
+
+body {
+  font: 400 14px/20px 'Lato', sans-serif;
+  padding: 50px;
+  background: #FFFFFF;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #444444;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 40px;
+}
+
+p, li {
+  max-width: 500px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+li {
+  margin-left: 30px;
+  list-style: circle;
+}
+
+a {
+  color: #444444;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  top: 5px;
+  transition: color 800ms cubic-bezier(0.550, 0.055, 0.675, 0.190) 0ms;
+  text-decoration: none;
+  font-style: italic;
+}
+
+p a {
+  color: #1956bb;
+}
+
+a:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: #1956bb;
+  transform: translate3d(-105%, 0, 0);
+  transition: transform 0ms linear 0ms;
+}
+
+a:hover {
+  color: #1956bb;
+  transition: color 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000) 50ms;
+}
+
+a:hover:after {
+  transform: translate3d(105%, 0, 0);
+  transition: transform 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000) 0ms;
+}
