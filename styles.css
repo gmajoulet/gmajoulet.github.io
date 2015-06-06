@@ -83,8 +83,12 @@ ul {
   margin-bottom: 40px;
 }
 
-p, li {
+p {
   max-width: 500px;
+}
+
+li {
+  max-width: 590px;
 }
 
 p {
