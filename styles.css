@@ -62,6 +62,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: #444444;
+  border-top: 5px solid #1956bb;
 }
 
 h1 {
