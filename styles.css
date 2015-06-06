@@ -95,57 +95,32 @@ ul {
   margin-bottom: 40px;
 }
 
-p {
-  max-width: 500px;
-}
-
 li {
   max-width: 590px;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-li {
   margin-left: 30px;
   list-style: circle;
 }
 
+p {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
 a {
   color: #444444;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  top: 5px;
-  transition: color 800ms cubic-bezier(0.550, 0.055, 0.675, 0.190) 0ms;
+  transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 0ms;
   text-decoration: none;
   font-style: italic;
+  height: 20px;
+  line-height: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 p a {
   color: #1956bb;
 }
 
-a:after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  background: #1956bb;
-  transform: translate3d(-105%, 0, 0);
-  transition: transform 0ms linear 0ms;
-}
-
 a:hover {
   color: #1956bb;
-  transition: color 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000) 50ms;
-}
-
-a:hover:after {
-  transform: translate3d(105%, 0, 0);
-  transition: transform 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000) 0ms;
+  border-bottom: 1px solid rgba(25, 126, 187, 1);
 }
