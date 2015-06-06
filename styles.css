@@ -54,14 +54,20 @@ table {
 
 /* Code */
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  box-sizing: border-box;
   font: 400 14px/20px 'Lato', sans-serif;
   padding: 50px;
   background: #FFFFFF;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: #444444;
-  border-top: 5px solid #1956bb;
+  border-left: 8px solid #1956bb;
 }
 
 @media (max-width: 600px) {
